@@ -1,10 +1,36 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+body{
+    font-family: 'Nunito', sans-serif;
+    line-height: 2rem;
+}
 .Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
     margin: 2rem ;
     padding: 1rem;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    /* box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px; */
+    background: linear-gradient(135deg, #e8bcb9,#f39f5a,#ae445a,#662549,#451952,#1d1a39);
+    color: #dbdbdb;
+    text-shadow: 5px 5px 24px rgb(0, 0, 0);
+    border-radius: 15px;
+}
+.CityName{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
 }
 .temp{
     font-size: 48px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+.Humidity{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
 }
 

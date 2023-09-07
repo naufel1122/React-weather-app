@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useRef, useState } from 'react';
 import WeatherCard from '../weatherWidget/weatherWidget';
+import './home.css'
 
 const Home = () => {
 
@@ -43,7 +44,7 @@ const Home = () => {
 
 
     return (<div>
-        <form onSubmit={Submit}>
+        <form className='form' onSubmit={Submit}>
             <label htmlFor="CityName">City Name:</label>
             <input type="text" id="CityName"
                 required minLength={4}
@@ -54,13 +55,13 @@ const Home = () => {
             <button type="submit" >Submit</button>
         </form>
 
-        <hr />
+        
 
         {weatherData.length ?
             weatherData.map((eachWeatherData, index ) => {
                 return <WeatherCard key={index} weatherData={eachWeatherData} />
             })
-            : <div>No Data</div>}
+            : <div className='No-data'>No Data</div>}
 
 
     </div>
