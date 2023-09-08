@@ -27,12 +27,21 @@ body{
     color: #fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -24px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+@media (min-width: 576px) and (max-width: 769px){
+.form{
+    height: 200px !important ;
+}
+.form input{
+    height: 10px;
+}
+}
 @media (min-width: 769px) and (max-width: 992px) {
 .form{
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin-left: 12%; */
+    height: 30%;
 }
 }
 .form label{
@@ -51,6 +60,8 @@ body{
     padding: 10px;
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -24px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
 }
 .form button{
     background-color: transparent;
