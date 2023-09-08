@@ -43,7 +43,7 @@ const Home = () => {
 
 
 
-    return (<div>
+    return (<div className='form-container'>
         <form className='form' onSubmit={Submit}>
             <label htmlFor="CityName">City Name:</label>
             <input type="text" id="CityName"
