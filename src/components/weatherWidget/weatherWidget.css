@@ -2,6 +2,7 @@
 body{
     font-family: 'Nunito', sans-serif;
     line-height: 2rem;
+    height: auto;
 }
 .Card{
     display: flex;
@@ -9,26 +10,26 @@ body{
     justify-content: center;
     align-items: center;
     height: 60%;
-    width: 40%;
+    min-width: 53.5%;
     margin: 2rem ;
     padding: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    /* box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px; */
-    background: linear-gradient(135deg, #e8bcb9,#f39f5a,#ae445a,#662549,#451952,#1d1a39);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;   
+    background: linear-gradient(45deg, #394867,#212A3E,#394867,#F1F6F9);
     color: #dbdbdb;
     text-shadow: 5px 5px 24px rgb(0, 0, 0);
     border-radius: 15px;
 }
 @media (min-width:577px)and(max-width:768px) {
     .Card{
-        height: 70%;
-        width: 70%;
+        height: 100%;
+        width: 100;
     }
 }
 .CityName{
     font-size: 24px;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
+    
 }
 .temp{
     font-size: 48px;
