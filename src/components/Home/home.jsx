@@ -45,7 +45,7 @@ const Home = () => {
 
     return (<div className='form-container'>
         <form className='form' onSubmit={Submit}>
-            <label htmlFor="CityName">City Name:</label>
+            <label htmlFor="CityName">Enter City Name:</label>
             <input type="text" id="CityName"
                 required minLength={4}
                 maxLength={20}
@@ -61,7 +61,7 @@ const Home = () => {
             weatherData.map((eachWeatherData, index ) => {
                 return <WeatherCard key={index} weatherData={eachWeatherData} />
             })
-            : <div className='No-data'>No Data</div>}
+            : <div className='No-data'>No Data Founded</div>}
 
 
     </div>

@@ -73,6 +73,7 @@ body{
     font-weight: bold;
     border-radius: 10px;
     transition: all ease 0.4s;
+    cursor: pointer;
 }
 .form button:hover{
     font-weight: bold;
